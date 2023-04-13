@@ -3,18 +3,18 @@
 #include <windows.h>
 #include <time.h>
 using namespace std;
-//void outHorizontalLine(int inCount, char symbol, int time) {
-//	for (int i = 0; i < inCount; i++) {
-//		cout << symbol;
-//		Sleep(time);
-//	}
-//}
-//void outVerticalLine(int inCount, char symbol,int time) {
-//	for (int i = 0; i < inCount; i++) {
-//		cout << "\t" << symbol << endl;
-//		Sleep(time);
-//	}
-//}
+void outHorizontalLine(int inCount, char symbol, int time) {
+	for (int i = 0; i < inCount; i++) {
+		cout << symbol;
+		Sleep(time);
+	}
+}
+void outVerticalLine(int inCount, char symbol,int time) {
+	for (int i = 0; i < inCount; i++) {
+		cout << "\t" << symbol << endl;
+		Sleep(time);
+	}
+}
 void outKubik(int kub) {
 	switch (kub)
 	{
@@ -71,14 +71,14 @@ void outKubik(int kub) {
 }
 int main()
 {
-	//setlocale(LC_ALL, "Ukrainian");
+	setlocale(LC_ALL, "Ukrainian");
 //  /*Task 1 Nаписати програму, яка виводить на екран
 //	лінію заданим символом, вертикальну або горизонтальну, причому лінія може виводитися швидко, нормально
 //	і повільно. Спілкування з користувачем організувати через меню.*/
 //	int countChar, time;
 //	char inChar, menu;
 //	
-//	//while (menu == 'v' || menu == 'V' || menu == 'h' || menu == 'H')
+//	while (menu == 'v' || menu == 'V' || menu == 'h' || menu == 'H')
 //	do{
 //		cout << "Введiть символ: "; cin >> inChar;
 //		cout << "Введiть кiлькiсть символiв: "; cin >> countChar;
